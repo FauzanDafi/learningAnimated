@@ -1,0 +1,28 @@
+body {
+    background-color: #dedede;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin: 40rem auto;
+
+    animation: rotateAnimation;
+    animation-duration: 0.5ms;
+    animation-direction: alternate;
+    animation-timeline: scroll(block nearest);
+}
+
+@keyframes rotateAnimation {
+    from {
+        width: 100px;
+        height: 100px;
+        transform: rotate(0deg);
+    }
+    to {
+        width: 500px;
+        height: 500px;
+        transform: rotate(360deg);
+    }
+}
